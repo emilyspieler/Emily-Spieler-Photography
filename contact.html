@@ -1,94 +1,104 @@
 <!DOCTYPE Html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title> Chicago Portrait Photographer | Commissions by Emily Spieler Photography </title>
 </head>
-<!---fonts and references ----> 
- <link href="style.css" type="text/css" rel="stylesheet">
+<!---fonts and references ---->
+<link href="style.css" type="text/css" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans+Condensed:300,700|Pavanam" rel="stylesheet">
- <!---fonts and references ----> 
- <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
- <h1><a href="http://chicagoportraitsociety.atwebpages.com/">Chicago Portrait Society</a></h1>
- <!---Website UL --->
-<nav>
-<ul>
-  <li><a href="index.html">Welcome</a></li> 
-  <li><a href="families.html">Families</a></li>
-  <li><a href="portraits.html">Portraits</a></li>
-  <li><a href="performance.html">Performance</a></li>
-  <li><a href="contact.html">Contact</a></li>
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <!---fonts and references ---->
+  <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
+  <nav>
+
+
+  <div class="topnav">
+    <a href="index.html" class="active">Menu</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="portraits.html">Portraits</a>
+      <a href="performance.html">Performance</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+    </div>
+    <h1><a href="http://emilyspielerphotography.com" >Emily Spieler Photography</a></h1>
+  <ul>
+    <a href="#content" class="skip">Skip to content</a>
+    <li><a href="index.html">Welcome</a></li>
+    <li><a href="portraits.html">Portraits</a></li>
+    <li><a href="performance.html">Performance</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
+
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+
+
+
+
   </nav>
 <body>
 <div id="familiesbanner">
 <img src="portraits/0014.jpg" style="width:100%" alt="Chicago Portrait">
 </div>
-<h3>Want To Learn More? </h3>
-<div id="contactparagraph">
-<p>Fill out the form below and we will be in touch!</p>
-</div>
-<div id="contactform">
-
-<form action="html_form_send.php" method="post" name="contactform"> 
-<table width="70%">
-</tr>
-<tr>
- <td valign="top">
-  <label for="first_name">Full Name *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="first_name" maxlength="70" size="50">
- </td>
-</tr>
-<tr>
- <td valign="top"">
-  <label for="last_name">How did you find us?</label>
- </td>
- <td valign="top">
-  <input  type="text" name="last_name" maxlength="70" size="50">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="email">Email Address *</label>
- </td>
- <td valign="top">
-  <input  type="text" name="email" maxlength="80" size="50">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="telephone">Telephone Number</label>
- </td>
- <td valign="top">
-  <input  type="text" name="telephone" maxlength="30" size="50">
- </td>
-</tr>
-<tr>
- <td valign="top">
-  <label for="comments">Tell us more! *</label>
- </td>
- <td valign="top">
-  <textarea  name="comments" maxlength="2000" cols="50" rows="12"></textarea>
- </td>
-</tr>
-<tr>
- <td colspan="2" style="text-align:center">
-  <input type="submit" value="Submit">  
- </td>
-</tr>
-</table>
-</form>
-</div>
+<HR WIDTH="77%" ALIGN="center">
+<h2>Learn More...</h2>
+<div class='copy'>
+      <div class="ptwo">
+        <p>For us, an enjoyable customer experience is just as important as creating memorable images. Because of this, we aren't just hired professionals. We are your friends with cameras. Taking photographs should not be a chore; it should be the highlight of your day. We love what we do and our enthusiasm is infectious.
+<a href="portraits/pricing.jpg">Click here</a> to view our pricing and package information and send us a message to learn more!
+        </p>
+      </div>
+      <br></br>
+  </div>
+  <HR WIDTH="77%" ALIGN="center">
+    <div id="content">
+  <div id="wrapper">
+  <div id="contact_form_div">
+   <h2>Ready To Book? Want To Chat?</h2>
+      <p id="contact_label">Send us a message below!</p>
+      <form action="send_form_email.php" method="post">
+      <input type="text" name="first_name" placeholder="first name"><br>
+      <input type="text" name="last_name" placeholder="last name"><br>
+      <input type="text" name="email" placeholder="email"><br>
+  <textarea placeholder="message" type="text" rows="5" name="message" cols="60">message</textarea><br>
+  <input type="submit" name="submit" value="Submit">
+  </form>
+  </div>
+  </div>
+    </div>
 </body>
 <footer>
+    <hr>
+  <div class="social">
+  <a href='https://www.instagram.com/emilysweddings/'><img src="social/1.png" style="width:5%" alt="Chicago Portrait"></a>
+  <a href='mailto:espielerphotography@gmail.com'><img src="social/3.png" style="width:5%" alt="Chicago Portrait"></a>
+  <a href='https://www.facebook.com/EmilySpielerPhotography/'><img src="social/4.png" style="width:5%" alt="Chicago Portrait"></a>
+  </div>
 <ul>
-  <li><a href="index.html">Welcome</a></li> 
-  <li><a href="families.html">Families</a></li>
+  <li><a href="index.html">Welcome</a></li>
   <li><a href="portraits.html">Portraits</a></li>
   <li><a href="performance.html">Performance</a></li>
   <li><a href="contact.html">Contact</a></li>
   </ul>
-  <p>Chicago Portrait Society, a division of Emily Spieler Photography</p>
-  </footer> 
+  <p>2019 Emily Spieler Photography</p>
+  </footer>
 </html>

@@ -3,58 +3,95 @@
 <head>
   <title> Chicago Portrait Photographer | Commissions by Emily Spieler Photography </title>
 </head>
-<!---fonts and references ---->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <link href="style.css" type="text/css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans+Condensed:300,700|Pavanam" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
- <!---fonts and references ---->
-  <link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
-  <nav>
-<h1><a href="http://chicagoportraitsociety.atwebpages.com/" >Emily Spieler Photography</a></h1>
- <!---Website UL --->
+ <link href="https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans+Condensed:300,700|Pavanam" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:300" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Yeseva+One" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="icon" href="favicon.png" sizes="16x16 32x32" type="image/png">
+<nav>
+
+
+<div class="topnav">
+  <a href="index.html" class="active">Menu</a>
+  <!-- Navigation links (hidden by default) -->
+  <div id="myLinks">
+    <a href="portraits.html">Portraits</a>
+    <a href="performance.html">Performance</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+  </div>
+  <h1><a href="http://emilyspielerphotography.com" >Emily Spieler Photography</a></h1>
 <ul>
+  <a href="#content" class="skip">Skip to content</a>
   <li><a href="index.html">Welcome</a></li>
-  <li><a href="families.html">Families</a></li>
   <li><a href="portraits.html">Portraits</a></li>
   <li><a href="performance.html">Performance</a></li>
   <li><a href="contact.html">Contact</a></li>
-  </ul>
-  </nav>
+</ul>
+
+
+  <script>
+  function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+  </script>
+
+
+
+
+</nav>
 <div class="banner">
   <img src="portraits/0010.jpg" style="width:100%" alt="Chicago Portrait">
+   </div>
+    </div>
 </div>
 <!---put text here to describe services --->
-<div id="featured">
 <HR WIDTH="75%" ALIGN="center">
- <h3>Featured Work</h2>
-   <h5>Our Most Recent Portrait Sessions</h5>
+<div id="content">
+<div id="featured">
+ <h2>Featured Work</h2>
+ <div class="row">
    <div class="container">
-     <a href="blog-trish.html"><img src="portraits/0014.jpg" style="width:100%" alt="Chicago Portrait"></a>
+     <a href="ella-blog.html"><img src="ella/0001.jpg" alt="Chicago Portrait"></a>
      <div class="overlay">
-       <a href="blog-trish.html"><div class="text">Trish: May 2018</div></a>
+       <a href="ella-blog.html"><div class="text">Ella: May 2018</div></a>
      </div>
    </div>
    <div class="container">
-  <a href="blog-nikki.html"><img src="chicago_portrait_society/0146.jpg" style="width:100%" alt="Chicago Portrait"></a>
+  <a href="nikki-blog.html"><img src="portraits/0146.jpg" alt="Chicago Portrait"></a>
      <div class="overlay">
-      <a href="blog-nikki.html"> <div class="text">Nikki: June 2018</div></a>
+      <a href="nikki-blog.html"> <div class="text">Nikki: June 2018</div></a>
      </div>
+   </div>
    </div>
   <div id="line">
  <HR WIDTH="75%" ALIGN="center">
  </div>
 </div>
-<h3>Bespoke Portraits, Customized For You!</h3>
-<p>
-Even better than the "say cheese" moments are the genuine smiles and laugher that we share with you. Our friendly staff specializes in documentary style portraiture, guarenteeing that you will have natural, genuine photos (and none of those cheesy poses!)
-With sessions starting at just $350, there's no reason not to make a memory.</p>
-<br>
-<div class="ptwo"><p>"Emily was professional, fun, understanding, and easy to work with through the entire process. She has a great eye for what makes for memorable and unique photos. I would recommend her to anyone having an event!"
--Eric G.</p></div>
-<div id="contact">
-<a href="mailto:espielerphotography@gmail.com"><button class="btn success">Contact Us!</button></a>
 </div>
-<HR WIDTH="75%" ALIGN="center">
+<h2>Bespoke Portraits, Customized For You</h2>
+<div class='copy'>
+      <div class="ptwo">
+        <p>"Emily was professional, fun, understanding, and easy to work with through the entire process. She has a great eye for what makes for memorable and unique photos. I would recommend her to anyone having an event!"
+          -Eric G.</p>
+      </div>
+  </div>
+<div id="contact">
+<a href="https://www.weddingwire.com/reviews/emily-spieler-photography-chicago/1cd2331f983ba1f4.html"><button class="btn success">Read More Reviews!</button></a>
+</div>
+<HR WIDTH="77%" ALIGN="center">
  <div class="row">
   <div class="column">
     <img src="portraits/0001.jpg" style="width:100%" alt="Chicago Portrait">
@@ -73,9 +110,9 @@ With sessions starting at just $350, there's no reason not to make a memory.</p>
     <img src="portraits/0017.jpg" style="width:100%" alt="Chicago Portrait">
   </div>
   <div class="column">
-    <img src="banner/Nikki-23.jpg" style="width:100%" alt="Chicago Portrait">
+    <img src="families/0003.jpg" style="width:100%" alt="Chicago Portrait">
     <img src="portraits/0030.jpg" style="width:100%" alt="Chicago Portrait">
-    <img src="chicago_portrait_society/0147.jpg" style="width:100%" alt="Chicago Portrait">
+    <img src="portraits/0147.jpg" style="width:100%" alt="Chicago Portrait">
     <img src="portraits/0022.jpg" style="width:100%" alt="Chicago Portrait">
     <img src="portraits/0023.jpg" style="width:100%" alt="Chicago Portrait">
     <img src="portraits/0018.jpg" style="width:100%" alt="Chicago Portrait">
@@ -90,7 +127,9 @@ With sessions starting at just $350, there's no reason not to make a memory.</p>
   </div>
 </div>
 </body>
+
 <footer>
+  <hr>
   <div class="social">
   <a href='https://www.instagram.com/emilysweddings/'><img src="social/1.png" style="width:5%" alt="Chicago Portrait"></a>
   <a href='mailto:espielerphotography@gmail.com'><img src="social/3.png" style="width:5%" alt="Chicago Portrait"></a>
@@ -98,11 +137,10 @@ With sessions starting at just $350, there's no reason not to make a memory.</p>
   </div>
 <ul>
   <li><a href="index.html">Welcome</a></li>
-  <li><a href="families.html">Families</a></li>
   <li><a href="portraits.html">Portraits</a></li>
   <li><a href="performance.html">Performance</a></li>
   <li><a href="contact.html">Contact</a></li>
   </ul>
-  <p> © 2018 Emily Spieler Photography</p>
+  <p>2019 Emily Spieler Photography</p>
   </footer>
 </html>
