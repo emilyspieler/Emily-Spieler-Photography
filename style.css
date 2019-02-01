@@ -107,7 +107,6 @@ img {
 
 footer {
   padding-bottom: 5%;
-  padding-top: 5%;
   color: white;
   margin-top: 5%;
 }
@@ -640,4 +639,20 @@ a.skip:hover {
     color: black;
     font-family: 'Montserrat', sans-serif;
   }
+}
+
+#return {
+  padding-top: 7%;
+  margin: auto;
+}
+
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  width:100%;
+  display: inline-block;
+  text-transform: italic;
+  padding-top: -10px;
+  text-transform: capitalize;
 }
